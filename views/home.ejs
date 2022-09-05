@@ -1,0 +1,19 @@
+<!-- layout -->
+<%- include ("partials/header.ejs") -%>
+<h1>Home</h1>
+
+<p>
+    <!-- output the value into the template -->
+    <%= startingContent %>
+</p>
+
+<% posts.forEach (function (post) { %>
+    <h1> <%= (post.postTitle).charAt(0).toUpperCase() + (post.postTitle).slice(1)%> </h1>
+    <p>
+        <%= (post.postBody).substring(0,100) + "..."%>
+        <a href="/posts/<%= post.postTitle%>">Read More</a>
+    </p>
+<% }) %>
+
+
+<%-include("partials/footer.ejs") -%>
