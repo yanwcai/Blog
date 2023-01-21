@@ -8,7 +8,7 @@ const _ = require("lodash");
 const homeStartingContent = "'Good morning, and in case I don't see ya, good afternoon, good evening, and good night!' --Truman";
 const aboutContent = "This is a blog website project using express, ejs, bootstrap, etc. You can create compose your journal and publish it here, and review other posted journals : )";
 const contactContent = "Contact us by email: cookieMyCat@cat.com";
-let posts = [];
+let posts = []; // a global variable to store all the posts
 
 const app = express();
 
