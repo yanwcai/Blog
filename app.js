@@ -63,7 +63,7 @@ app.post("/compose", function(req,res){
     postBody: req.body.postBody
   };
   posts.push(post);
-  res.redirect("/");
+  res.redirect("/"); // send the user back to the home page
 })
 
 
